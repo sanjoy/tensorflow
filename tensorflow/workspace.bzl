@@ -145,8 +145,7 @@ def tf_repositories(path_prefix = "", tf_repo_name = ""):
         sha256 = "f30da19bdd4b88db3aaf882819da45cdda7b1a9c43e9b5bf3aa28f74d8275729",
         strip_prefix = "abseil-cpp-e9324d926a9189e222741fce6e676f0944661a72",
         urls = [
-            "http://mirror.tensorflow.org/github.com/abseil/abseil-cpp/archive/e9324d926a9189e222741fce6e676f0944661a72.tar.gz",
-            "https://github.com/abseil/abseil-cpp/archive/e9324d926a9189e222741fce6e676f0944661a72.tar.gz",
+            "https://github.com/sanjoy/abseil-cpp/archive/e9324d926a9189e222741fce6e676f0944661a72.tar.gz",
         ],
     )
 
