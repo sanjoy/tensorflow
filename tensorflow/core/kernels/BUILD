@@ -488,7 +488,7 @@ cc_library(
 
 cc_library(
     name = "gpu_prim_hdrs",
-    hdrs = ["gpu_prim.h"],
+    hdrs = ["gpu_prim.h", "@cub_archive//:cub/util_namespace.cuh", "@cub_archive//:cub/util_arch.cuh"],
     deps = if_cuda([
         "@cub_archive//:cub",
     ]) + if_rocm([
@@ -4081,7 +4081,6 @@ tf_kernel_library(
 tf_kernel_library(
     name = "bincount_op",
     prefix = "bincount_op",
-    hdrs = ["@cub_archive//:cub/util_namespace.cuh", "@cub_archive//:cub/util_arch.cuh"],
     deps = [
         ":fill_functor",
         ":gpu_prim_hdrs",
