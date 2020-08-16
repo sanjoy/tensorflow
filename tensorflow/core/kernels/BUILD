@@ -4081,6 +4081,7 @@ tf_kernel_library(
 tf_kernel_library(
     name = "bincount_op",
     prefix = "bincount_op",
+    srcs = ["@cub_archive//:cub/util_namespace.cuh", "@cub_archive//:cub/util_arch.cuh"]
     deps = [
         ":fill_functor",
         ":gpu_prim_hdrs",
